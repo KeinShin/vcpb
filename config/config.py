@@ -6,7 +6,7 @@ API_ID = 1234567
 API_HASH = "ab1c23def45fg67890h123i45678j9kl"
 
 # Get this from @Botfather
-TOKEN = "1430367736:AAEXlPz5JSRBGaXzXilNM_EUFdJvJqw-gCg"
+TOKEN = "1517305760:AAG53bV39zleWVGL85NBHLFfTPwqcjyAmn4"
 
 # Your MongoDB URI (using a database named "vcpb"), if you don't provide, you can't use the playlist feature and wont see now playing message
 MONGO_DB_URI = "mongodb+srv://Jarvis:an1234mol@vcpb.eo0jr.mongodb.netvcpb?retryWrites=true&w=majority"
