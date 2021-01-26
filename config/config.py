@@ -9,7 +9,7 @@ API_HASH = "ab1c23def45fg67890h123i45678j9kl"
 TOKEN = "1430367736:AAEXlPz5JSRBGaXzXilNM_EUFdJvJqw-gCg"
 
 # Your MongoDB URI (using a database named "vcpb"), if you don't provide, you can't use the playlist feature and wont see now playing message
-MONGO_DB_URI = "postgressql://keinshin:pw@anmol:127.0.0.1/BLACK"
+MONGO_DB_URI = "mongodb+srv://Jarvis:an1234mol@vcpb.eo0jr.mongodb.netvcpb?retryWrites=true&w=majority"
 
 # The IDs of the users which can stream, skip, pause and change volume
 SUDO_USERS = [
