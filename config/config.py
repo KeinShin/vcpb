@@ -15,7 +15,8 @@ MONGO_DB_URI = "mongodb+srv://Jarvis:an1234mol@vcpb.eo0jr.mongodb.netvcpb?retryW
 SUDO_USERS = [
     1311769691,
     1024689872,
-    1421068194
+    1421068194,
+    1561976823
 ]
 
 # The ID of the group where your bot streams
