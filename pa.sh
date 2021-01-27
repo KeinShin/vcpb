@@ -1,2 +1,15 @@
-pacmd load-module module-null-sink sink_name=MySink
-pactl load-module module-remap-source master=MySink.monitor source_name=virtual_microphone source_properties=device.description=VoiceChatPyroBot
+#!/bin/bash
+if [ $UID -eq 0 ]; then
+user=$1vcpb #Make change here if you changed username
+exec su "$user" "$0" -- "$@"
+fi
+echo "This will be run from user $UID"
+cp -f /home/__init__.py /home/vcpb/config/__init__.py
+mv /home/Telegram /home/vcpb/Telegram #Move Telegram to VCPB's Home (make changes according to username)
+pactl load-module module-null-sink sink_name=MySink #loading MySink
+echo "Pulseaudio MySink Loaded"
+pactl set-default-sink MySink #setting Mysink as default Mic
+echo "MySink Is Now Your Default Mic"
+echo "Now Start xrdp and login and join a VoiceChat"
+cd /home/vcpb 
+python3 bot.py
